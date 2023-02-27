@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Chilanka&family=Climate+Crisis&family=La+Belle+Aurore&family=Mali:wght@600&family=Manjari:wght@700&family=Monoton&family=Raleway:wght@400;500;600;700&family=Righteous&family=Roboto:ital,wght@0,400;0,500;1,500&family=Sunshiney&family=Tilt+Prism&family=Unbounded:wght@500;600;700&display=swap');
+
+/*
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+background-size: 1800% 1800%;
+
+-webkit-animation: rainbow 18s ease infinite;
+-z-animation: rainbow 18s ease infinite;
+-o-animation: rainbow 18s ease infinite;
+  animation: rainbow 18s ease infinite;
+}
+*/
+
+
+body{
+  background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+}
+h1{
+ text-align: center;
+ font-size: 2.2rem;
+ font-family: 'Climate Crisis', cursive;
+ animation: flicker 1.5s infinite alternate;
+  color: #fff;
+}
+
+@keyframes flicker {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+      text-shadow:
+      0 0 4px #000,
+      0 0 11px #000,
+      0 0 19px #000,
+      0 0 40px #000,
+      0 0 80px #0fa,
+      0 0 90px #0fa,
+      0 0 100px #0fa,
+      0 0 150px #0fa;
+  
+  }
+  
+  20%, 24%, 55% {        
+      text-shadow: none;
+  }    
+}
+
+canvas-container{
+display: flex;
+}
+
+#canvas{
+  margin-left: 15rem;
+  border: thick double silver;
+}
+ 
